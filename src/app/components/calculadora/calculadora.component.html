@@ -1,0 +1,18 @@
+<div class="container bordr light" style="background-color: #06ff44;">
+    <!-- titulo -->
+    <div class="row justify-content-center title" style="margin-top: 10px;">
+        Calculadora
+    </div>
+    <!-- Contenido -->
+    <div class="form-group">
+        <label>Calcular</label>
+        <input type="text" class="form-control" aria-describedby="helpId" placeholder="Operando 1..." [(ngModel)]="op1">
+        <small id="helpId" class="form-text text-muted"></small>
+        <input type="text" class="form-control" aria-describedby="helpId" placeholder="Operando 2..." [(ngModel)]="op2">
+        <small id="helpId" class="form-text text-muted"></small>
+        <a (click)="sendS(op1, op2)" class="btn btn-primary spacing" role="button">+</a>
+        <a (click)="send(op1-op2, 'resta')" class="btn btn-primary spacing" role="button">-</a>
+        <a (click)="send(op1*op2, 'multiplicación')" class="btn btn-primary spacing" role="button">*</a>
+        <a (click)="send(op1/op2, 'división')" class="btn btn-primary spacing" role="button">/</a>
+    </div>
+</div>

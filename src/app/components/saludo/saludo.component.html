@@ -1,0 +1,13 @@
+<div class="container bordr light" style="background-color: #d60000;">
+    <!-- titulo -->
+    <div class="row justify-content-center title" style="margin-top: 10px;">
+        Saludo
+    </div>
+    <!-- Contenido -->
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" class="form-control" aria-describedby="helpId" placeholder="Saludar a..." [(ngModel)]="text">
+      <small id="helpId" class="form-text text-muted"></small>
+      <a (click)="send()" class="btn btn-primary" role="button">Saludar</a>
+    </div>
+</div>

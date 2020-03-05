@@ -1,0 +1,25 @@
+<!-- cuerpo de la pagina -->
+<div class="container">
+    <!-- titulo -->
+    <div class="row justify-content-center title" style="margin-top: 10px;">
+        Fundamentos de Aplicaciones Web - Tarea 4
+    </div>
+</div>
+
+<!-- cuerpo -->
+<div class="container" style="margin-top: 4em;">
+    <div class="row">
+        <!-- Calculadora -->
+        <div class="col-4">
+            <app-calculadora (resultado)="notify($event)"></app-calculadora>
+        </div>
+        <!-- Saludo -->
+        <div class="col-4">
+            <app-saludo (greet)="notify($event)"></app-saludo>
+        </div>
+        <!-- despliegue -->
+        <div class="col-4">
+            <app-display [holder]="holder"></app-display>
+        </div>
+    </div>
+</div>
